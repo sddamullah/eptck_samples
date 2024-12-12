@@ -23,7 +23,7 @@
       }
 
       .benefits-cont {
-        background-color: rgb(0 135 137);
+        /* background-color: rgb(0 135 137); */
         /* background-color: rgb(17, 163, 166); */
         padding-top: 1vw;
         border-radius: 30px;
@@ -31,47 +31,87 @@
 
       .benefits-cont h3 {
         font-size: 6vmin;
-        color: white;
+        color: rgb(2, 46, 91);
         text-align: center;
+        margin-bottom: 5vmin !important;
       }
 
       .befnefit {
+        box-shadow: 2px 2px 5px rgb(122 106 216 / 40%);
+        position: relative;
         width: 28%;
-        margin-bottom: 8vmin;
+        height: 150px;
+        margin-bottom: 10vmin;
+        background-color: rgb(241, 240, 254);
+        max-height: fit-content;
+        border-radius: 20px;
       }
-
-      .benefits .benefit-icon i {
+      .benefits .benefit-icon:hover i {
+        transform: translateY(-7px);
+        transition: 0.2s;
+      }
+      .benefits .benefit-icon {
         display: flex;
         justify-content: center;
-        font-size: 5.5vmin;
+        font-size: 6.5vmin;
         color: white;
         /* background-color: rgb(0 135 137); */
-        background-color: rgb(17, 163, 166);
-        height: 11vmin;
+        background-color: rgb(122, 106, 216);
+        height: 13vmin;
+        cursor: pointer;
         align-items: center;
         border-radius: 100%;
-        width: 11vmin;
+        width: 13vmin;
       }
 
       .benefits .benefit-icon {
         display: flex;
+        position: absolute;
+        right: -11%;
+        top: -37%;
+
         justify-content: center;
         margin-bottom: 1vmin;
       }
 
       .benefit-text {
         text-align: center;
-        color: white;
+        color: rgb(2, 46, 91);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px;
         font-size: 2.5vmin;
+        height: 100%;
       }
 
       @media only screen and (max-width: 768px) {
         .befnefit {
-          width: 49%;
+          width: 100%;
+          height: 100px;
+          border-radius: 10px;
+          height: 91px;
         }
-
+        section {
+          height: 370px;
+          overflow-y: auto;
+          width: 100% !important;
+        }
+        section::-webkit-scrollbar {
+          visibility: hidden !important;
+        }
+        .benefits .benefit-icon {
+          font-size: 28px;
+          height: 50px;
+          width: 50px;
+          right: -8%;
+          top: -20%;
+        }
         .benefits-cont {
           border-radius: 10px;
+        }
+        .benefit-text {
+          font-size: 15px;
         }
 
         .benefits {
@@ -83,7 +123,7 @@
         }
       }
 
-      @media only screen and (min-width: 768px) and (max-width: 1200px) {
+      /* @media only screen and (min-width: 768px) and (max-width: 1200px) {
         .benefits .benefit-icon i {
           width: 8vmin;
           height: 8vmin;
@@ -106,14 +146,16 @@
         .benefits-cont {
           border-radius: 20px;
         }
-      }
+      }  */
     </style>
   </head>
 
   <body>
     <section>
       <div class="container benefits-cont" style="width: 82%; margin: auto">
-        <h3 style="margin: 0px">Benefits We Offer</h3>
+        <h3 style="margin: 0px">
+          Benefits <span style="color: rgb(122, 106, 216)">We Offer </span>
+        </h3>
         <div class="benefits">
           <div class="befnefit">
             <div class="benefit-icon">

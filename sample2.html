@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cards Hover2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+   
+
+.container {  
+    display: flex;
+    gap: 1%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    
+}
+
+.container .card {
+    position: relative;
+    width:24%;
+    background-color: transparent;
+}
+
+.container .card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.container .card .icon {
+    background: rgb(0, 37, 74);
+}
+
+
+
+.container .card .icon i {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.7s;
+    transform: translate(-50%, -50%); */
+    font-size: 80px;
+background-color: white;
+width: 35%;
+display: flex;
+border-radius: 10px;
+justify-content: center;
+padding:  4% 0px;
+    color: rgb(0, 37, 74);
+}
+
+
+.container .card .icon  {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 80px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
+
+}
+
+.container .card .face {
+    max-width: 100%;
+    height: 200px;
+    transition-duration: 0.5s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+        z-index: 1;
+      
+    transform: translateY(100px);
+ 
+}
+
+.container .card:hover .face.face1{
+   
+    transform: translateY(0px);
+}
+
+
+
+
+
+
+.container .card .face.face2 {
+   
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   background-color: white;
+    box-shadow: 0 2px 20px rgba(87, 82, 82, 0.616);
+    transform: translateY(-100px);
+    border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+    border-radius: 0px;
+}
+
+
+ 
+
+
+.container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 24px;
+
+    color: #414141;
+} 
+
+
+        </style>
+</head>
+
+<body>
+    <div class="container"  style="width: 82%;">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <div class="icon">
+                        <i class="fa-solid fa-globe" aria-hidden="true"></i></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                       Innovation at Its Core
+                    </h3>
+                    <p>Be part of projects that push technological boundaries.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

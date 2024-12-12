@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Work with Us</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .why-cont-h {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 50px 20px;
+            background: #64b3f4;
+            color: #fff;
+        }
+
+
+
+        .why-cont {
+            /* display: grid;
+            grid-template-columns: repeat(2, 1fr); */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5%;
+            padding: 40px;
+        }
+
+
+        .why-cont .why-sec {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 49.25%;
+            text-align: center;
+            margin-bottom: 1.5%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .why-sec:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .why-sec-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .why-sec h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .why-sec p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 570px) {
+            .why-cont .why-sec {
+                width: 100%;
+                margin-bottom: 15px;
+
+            }
+
+        }
+
+        @media screen and (min-width:570px) and (max-width: 768px) {
+            .why-cont .why-sec {
+                width: 48%;
+                margin-bottom: 15px;
+
+            }
+        }
+
+        .why-cont .innovation {
+            background-color: #e0f7fa;
+        }
+
+        .why-cont .growth {
+            background-color: #c8e6c9;
+        }
+
+        .why-cont .team {
+            background-color: #fff9c4;
+        }
+
+        .why-cont .inclusive {
+            background-color: #f3e5f5;
+        }
+
+        /* .why-cont  .why-sec:hover .why-sec-icon {
+            color: #64b3f4;
+        } */
+    </style>
+</head>
+
+<body>
+
+
+    <h1 class="why-cont-h">Why Work with Us? </h1>
+    <section class="why-cont">
+
+        <div class="why-sec innovation">
+            <div class="why-sec-icon">💡</div>
+            <h3>Innovation at Its Core</h3>
+            <p>Be part of projects that push technological boundaries and shape the future.</p>
+        </div>
+
+        <div class="why-sec growth">
+            <div class="why-sec-icon">📈</div>
+            <h3>Growth Opportunities</h3>
+            <p>We prioritize continuous learning and provide opportunities to develop your skills and career.</p>
+        </div>
+
+        <div class="why-sec team">
+            <div class="why-sec-icon">🤝</div>
+            <h3>Team Spirit</h3>
+            <p>Work with passionate, like-minded professionals dedicated to excellence.</p>
+        </div>
+
+        <div class="why-sec inclusive">
+            <div class="why-sec-icon">🌍</div>
+            <h3>Inclusive Environment</h3>
+            <p>We value diversity and ensure every team member feels empowered and respected.</p>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

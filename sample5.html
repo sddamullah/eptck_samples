@@ -1,0 +1,161 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .benefits {
+        display: flex;
+        justify-content: space-between;
+        padding: 4% 2% 0.5% 2%;
+        flex-wrap: wrap;
+        gap: 1%;
+      }
+
+      .benefits-cont {
+        background-color: rgb(2, 46, 91);
+        padding-top: 1vw;
+        border-radius: 30px;
+      }
+
+      .benefits-cont h3 {
+        font-size: 6vmin;
+        color: white;
+        text-align: center;
+      }
+
+      .befnefit {
+        width: 28%;
+        margin-bottom: 8vmin;
+      }
+
+      .benefits .benefit-icon i {
+        display: flex;
+        justify-content: center;
+        font-size: 5.5vmin;
+        color: white;
+        background-color: rgb(3, 84, 166);
+        height: 11vmin;
+        align-items: center;
+        border-radius: 100%;
+        width: 11vmin;
+      }
+
+      .benefits .benefit-icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1vmin;
+      }
+
+      .benefit-text {
+        text-align: center;
+        color: white;
+        font-size: 2.5vmin;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .befnefit {
+          width: 49%;
+        }
+
+        .benefits-cont {
+          border-radius: 10px;
+        }
+
+        .benefits {
+          gap: 1%;
+        }
+
+        .benefits-cont h3 {
+          padding: 4% 2% 2% 2%;
+        }
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        .benefits .benefit-icon i {
+          width: 8vmin;
+          height: 8vmin;
+          font-size: 4vmin;
+        }
+
+        .benefit-text {
+          font-size: 1.8vmin;
+        }
+
+        .befnefit {
+          margin-bottom: 5vmin;
+        }
+
+        .benefits-cont h3 {
+          font-size: 4vmin;
+          padding-top: 1%;
+        }
+
+        .benefits-cont {
+          border-radius: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="container benefits-cont" style="width: 82%; margin: auto">
+        <h3 style="margin: 0px">Benefits We Offer</h3>
+        <div class="benefits">
+          <div class="befnefit">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <div class="benefit-text">
+              Competitive salary and performance-based incentives
+            </div>
+          </div>
+          <div class="befnefit">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div class="benefit-text">
+              Professional development programs and certifications
+            </div>
+          </div>
+          <div class="befnefit">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="benefit-text">Learning & Development</div>
+          </div>
+          <div class="befnefit">
+            <div class="benefit-icon">
+              <i class="fas fa-business-time"></i>
+            </div>
+            <div class="benefit-text">Flexible working hours</div>
+          </div>
+          <div class="befnefit">
+            <div class="benefit-icon">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <div class="benefit-text">Regular team-building activities</div>
+          </div>
+
+          <div class="befnefit">
+            <div class="benefit-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <div class="benefit-text">Bi-annual Bonus</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

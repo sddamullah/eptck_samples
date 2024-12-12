@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="Scripts/moment.js"></script>
+    <script src="Scripts/vue.js"></script>
+    <script src="JS/jobPost.js"></script>
+    <link href="content/toastr.min.css" rel="stylesheet" />
+    <link href="content/toastr.css" rel="st ylesheet" />
+    <link rel="stylesheet" href="fontSS/fontSS/stylesheet.css" />
+<!-- <style>
+.values h1:first-child{
+    text-align: center ;
+}
+
+.values .cards div i {
+    font-size: 30px;
+    color:  rgb(230, 248, 248) !important;
+    border: 1px solid  rgb(230, 248, 248);;
+    border-radius: 100%;
+    padding: 4% 3%;
+    margin-bottom: 30px;
+}
+.values .cards div i:hover{
+    background-color: #00254A;
+    color: white !important;
+text-align: center;
+}
+
+.values .cards{
+    width: 25%;
+    background: linear-gradient(45deg, #00254A 50%,  rgb(255, 0, 0) );
+
+    padding: 1% 2% 1% 2% ;
+ box-shadow: 1px 5px 5px  rgba(0, 0, 0, 0.137);    
+}
+.values .cards .card-h-text{
+    font-size: 24px;
+    color:  rgb(230, 248, 248);
+    font-weight: 600;
+}
+.values .cards .card-h-text+p{
+    font-size: 15px ;
+    letter-spacing: normal;
+    color: rgb(230, 248, 248);
+    
+}
+</style> -->
+
+<style>
+        section.values{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+     background-color: cornsilk;
+    margin: 5% 0px;
+    border-radius: 50px;
+    max-height: 600px;
+overflow: hidden;
+box-shadow: 2px 2px 5px rgba(211, 211, 211, 0.726);
+    }
+
+    section.values .values-img{
+        width: 50%;
+        /* background-color: red; */
+    }
+    section.values .values-points{
+        width: 45%;
+        padding: 1%;
+        /* background-color: green; */
+    }
+    section.values .values-points ul li p:nth-child(1){
+        margin-bottom: 1%;
+        line-height: 2.5rem;
+        color:#00254A;;
+     font-size: 1.2vw;
+     font-weight: 600;
+    }
+    section.values .values-points ul li p:nth-child(2){
+        font-size: 15px;
+     line-height : normal;
+    
+    
+    }
+    section.values .values-points ul li .fa-handshake{
+        position: absolute;
+    left: -35px;
+    top: 0px;
+  
+    color: #00254A;
+    font-size: 1.2vw;
+    /* padding: 1%;
+      border: 1px solid #00254A;
+    border-radius: 100%; */
+}
+    section.values .values-points ul li{
+        position: relative;
+          margin-bottom: 1.3rem;
+    }
+    .values-points p:first-child{
+     font-size: 30px;
+    line-height: 5rem;
+    font-weight: 700;
+    margin-bottom: 6%;
+    }
+    @media only screen and (min-width: 1450px) {
+ .values-points p:first-child {
+     line-height: 70px;
+    font-size: 30px;
+    margin-bottom: 4%; 
+    }
+    section.values .values-points ul li p:nth-child(1) {
+        font-size: 20px;
+            line-height: 3rem;
+    }
+    section.values .values-points ul li p:nth-child(2) {
+    
+    font-size: 15px;}
+    section.values .values-points ul li .fa-handshake{
+        font: 1vw;
+    }
+    }
+
+</style>
+</head>
+<!-- #00254A; -->
+<!-- <body >
+<div class="container" >
+    <div class=" values">
+    <h1>Our Core Values </h1>
+    <div class="cards ">
+       <div>
+        <i class="fa-regular fa-handshake "></i>
+       </div>
+       <p class="card-h-text">Respect:</p>
+       <p>Foster an inclusive environment where everyone's opinions and contributions are valued.</p>
+    </div>
+    </div>
+</div>
+</body> -->
+
+
+
+<body>
+    <div class="container">
+    
+        <section class="values">
+<div class="values-img">
+<img src="images/values.png" type="image" width="100%" alt="">
+</div>
+<div class="values-points">
+    <p>Our Core Values </p>
+    <ul style="list-style:none;" >
+        <li>
+            
+            <p> Respect:</p>
+            <p class="font-reg">Foster an inclusive environment where everyone's opinions and contributions are valued.</p>
+        </li>
+        <li>
+          
+            <p>Employee Development:</p>
+            <p>Empower individuals through learning opportunities that nurture professional growth.</p>
+        </li><li>
+          
+            <p>Customer Focus:</p>
+            <p>Prioritize understanding and fulfilling customer needs with excellence.</p>
+        </li><li>
+          
+            <p>Value Creation: </p>
+            <p>Deliver innovative solutions that add measurable value to all stakeholders.</p>
+        </li><li>
+          
+            <p>Continuous Improvement: </p>
+            <p> Embrace change and strive to enhance processes, products, and skills.</p>
+        </li><li>
+          
+            <p> Gratitude:</p>
+            <p>Celebrate achievements with appreciation and acknowledge contributions with sincerity..</p>
+        </li>
+    </ul>
+    
+
+</div>
+</section>
+
+
+</div>
+
+
+</body>
+
+</html>

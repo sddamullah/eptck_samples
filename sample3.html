@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    /* Container Styling */
+.why-work-with-us {
+  background: linear-gradient(135deg, rgb(0, 37, 74) 0%, rgb(0, 58, 112) 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  width: 82% ;
+  margin: auto;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+
+.feature {
+    width: 21.6%;
+  background-color: rgba(0, 37, 74, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+} */
+
+.icon-container {
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  transition: fill 0.3s ease;
+}
+
+/* .feature:hover .icon {
+  fill: rgb(0, 58, 112);
+} */
+
+strong {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #f2f2f2;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+<body>
+    
+
+    <div class="why-work-with-us">
+        <h2 class="section-title">Why Work with Us?</h2>
+        <div class="content">
+          <div class="feature">
+            <div class="icon-container">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm-1 5h2v6h-2z"/></svg>
+            </div>
+            <strong>Innovation at Its Core</strong>
+            <p>Be part of projects that push technological boundaries.</p>
+          </div>
+          <div class="feature">
+            <div class="icon-container">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 5h14v14H5z"/></svg>
+            </div>
+            <strong>Growth Opportunities</strong>
+            <p>We prioritize continuous learning and provide opportunities to develop your skills and career.</p>
+          </div>
+          <div class="feature">
+            <div class="icon-container">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3l10 9-3 4-7-3-3 7-3-7-7 3-3-4z"/></svg>
+            </div>
+            <strong>Team Spirit</strong>
+            <p>Work with passionate, like-minded professionals dedicated to excellence.</p>
+          </div>
+          <div class="feature">
+            <div class="icon-container">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 7h2v6h-2zm0 8h2v2h-2z"/></svg>
+            </div>
+            <strong>Inclusive Environment</strong>
+            <p>We value diversity and ensure every team member feels empowered and respected.</p>
+          </div>
+        </div>
+      </div>
+      
+      
+</body>
+</html>
